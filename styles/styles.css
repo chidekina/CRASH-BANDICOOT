@@ -1,0 +1,60 @@
+@import url(/styles/menu.css);
+@import url(/styles/logos.css);
+@import url(/styles/effects.css);
+@import url(loading.css);
+@import url(animation.css);
+@import url(options.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Crash';
+}
+
+@font-face {
+    font-family: 'CCZoinks Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CCZoinks Regular'), url('CCZoinks.woff') format('woff');
+    }
+    
+@font-face{
+    font-family: 'Crash';
+    src: url(/font/crash-a-like.ttf);
+}
+
+@font-face{
+    font-family: 'Cartoon';
+    src: url(/font/ComicsCarToon.ttf);
+}
+
+body {
+    width: auto;
+    background-image: url(/imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.crash__dancing{
+    background-color: transparent;
+}
+
+.logos {
+    margin-left: 20px;
+    height: 100vh;
+    display: flex;
+    gap: 7.5rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+}
+
+#gameselection{
+    display: grid;
+}
+
+

@@ -1,0 +1,32 @@
+
+.explode-animation{
+    transition-timing-function: ease-out
+}
+
+#crash__img1 {
+    width: 25rem;
+    margin-bottom: 5rem;
+
+    &:focus {
+        animation: logo 1s infinite normal;
+    }
+}
+
+#crash__img2 {
+    width: 25rem;
+    margin-bottom: 5rem;
+
+    &:focus {
+        animation: logo 1s infinite normal;
+    }
+
+}
+
+#crash__img3 {
+    width: 25rem;
+    margin-bottom: 5rem;
+
+    &:focus {
+        animation: logo 1s infinite normal;
+    }
+}

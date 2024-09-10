@@ -1,0 +1,21 @@
+.options{
+    font-family: 'CCZoinks Regular';
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 4rem;
+    font-size: 36px;
+    height: 5rem;
+    color: white;
+    font-weight: 100;
+
+    & li{
+        text-shadow: -2px -2px 0 black, 2px -1px 0 black, 3px 2px 0 black,
+        2px 2px 0 black;
+        & img{
+            margin-right: 5px;
+        }
+    }
+}

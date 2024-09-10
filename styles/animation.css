@@ -1,0 +1,14 @@
+
+#animation{
+    margin-top: 600px;
+    width: 54px;
+    height: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 40%;
+    right: 50%;
+    background: url(/imgs/toppng.com-crash-bandicoot-sprite-sheet-1312x997.png) left center;
+    animation: crash_animation 0.7s steps(8) infinite;
+}
+
+

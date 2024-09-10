@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crash Bandicoot</title>
-    <link rel="stylesheet" href="styles.css">
+    <link class="crash__menu__item" nk rel="stylesheet" href="/styles/styles.css">
+    <script src="/app/app.js"></script>
+    <script src="app/loading.js"></script>
+
 </head>
-<body>
-    <div class="logos">
-    <div class="crash1"><img src="/imgs/Crash_Bandicoot_Logo.png" alt="" class="crash__img">
+
+<body onload="loadGame()">
+
+    <div id="player">
+        <audio controls autoplay loop hidden>
+            <source src="music/Crash Bandicoot Main Theme.mp3" type="audio/mpeg">
+            If you're reading this, audio isn't supported.
+        </audio>
+        <!-- <iframe src="music/Crash Bandicoot Main Theme.mp3" allow="autoplay" id="audio"></iframe> -->
+
+
     </div>
-    <div class="crash2"><img src="/imgs/crash2.png" alt="" class="crash__img2">
-        <div class="crash__menu">
-            <ul>
-                <li>CONTINUE</li>
-                <li>OPTIONS</li>
-                <li>NEW GAME</li>
-                <li>STORM ACENTY</li>
-                <li></li>
-            </ul>
-        </div></div>
-    <div class="crash3"><img src="/imgs/crash3.png" alt="" class="crash__img3"></div>
+    <div id="crash__running">
+    <div id="animation"></div>
 </div>
+    <div id="loading">
+        <div id="gradient__color">
+            <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+        </div>
+    </div>
+    <main id="crash__trilogy">
+        <div class="logos">
+            <div class="crash1">
+                <label for="crash1__selected">
+                    <input class="crash__cb" type="checkbox" on="" id="crash1__selected" onclick='abrirJogo()'>
+                    <div class="explode-animation1"><img src="/imgs/Crash_Bandicoot_Logo.png" alt="" id="crash__img1">
+                    </div>
+                </label>
+                <div id="crash1__selected__visibility">
+                    <ul id="crash__menu1">
+                        <li class="crash__menu__item">CONTINUE</li>
+                        <li class="crash__menu__item">OPTIONS</li>
+                        <li class="crash__menu__item">NEW GAME</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="crash2">
+                <label for="crash2__selected">
+                    <input class="crash__cb" type="checkbox" on="" id="crash2__selected" onclick='abrirJogo()'>
+                    <div class="explode-animation2"><img src="/imgs/crash2.png" alt="" id="crash__img2">
+                    </div>
+                </label>
+                <div id="crash2__selected__visibility">
+                    <ul id="crash__menu2">
+                        <li class="crash__menu__item">CONTINUE</li>
+                        <li class="crash__menu__item">OPTIONS</li>
+                        <li class="crash__menu__item">NEW GAME</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="crash3">
+                <label for="crash3__selected">
+                    <input class="crash__cb" type="checkbox" on="" id="crash3__selected" onclick='abrirJogo()'>
+                    <div class="explode-animation3"><img src="/imgs/crash3.png" alt="" id="crash__img3">
+                    </div>
+                </label>
+                <div id="crash3__selected__visibility">
+                    <ul id="crash__menu3">
+                        <li class="crash__menu__item">CONTINUE</li>
+                        <li class="crash__menu__item">OPTIONS</li>
+                        <li class="crash__menu__item">NEW GAME</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="options">
+            <li> <img src="icons/PlayStation_button_X.svg" alt="X button">SELECT</li>
+            <li> <img src="icons/PlayStation_button_S.svg" alt="Square button">LICENSE</li>
+            <li> <img src="icons/PlayStation_button_T.svg" alt="Triangle Button">CREDITS</li>
+        </ul>    
+    </main>
+
+
 </body>
+
 </html>
