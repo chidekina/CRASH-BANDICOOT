@@ -50,7 +50,7 @@ body {
     gap: 7.5rem;
     justify-content: space-around;
     align-items: flex-end;
-    width: 60%;
+    width: 100%;
 }
 
 #gameselection{
